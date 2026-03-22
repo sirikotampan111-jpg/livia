@@ -1,0 +1,1001 @@
+==========================================
+[2026-03-22 03:12:35] Starting: bun install
+==========================================
+[BUN] Installing dependencies...
+[0.77ms] ".env"
+bun install v1.3.10 (30e609e0)
+
++ @tailwindcss/postcss@4.1.18
++ @types/react@19.2.8
++ @types/react-dom@19.2.3
++ bun-types@1.3.6
++ eslint@9.39.2
++ eslint-config-next@16.1.3
++ tailwindcss@4.1.18
++ tw-animate-css@1.4.0
++ typescript@5.9.3
++ @dnd-kit/core@6.3.1
++ @dnd-kit/sortable@10.0.0
++ @dnd-kit/utilities@3.2.2
++ @hookform/resolvers@5.2.2
++ @mdxeditor/editor@3.52.3
++ @prisma/client@6.19.2
++ @radix-ui/react-accordion@1.2.12
++ @radix-ui/react-alert-dialog@1.1.15
++ @radix-ui/react-aspect-ratio@1.1.8
++ @radix-ui/react-avatar@1.1.11
++ @radix-ui/react-checkbox@1.3.3
++ @radix-ui/react-collapsible@1.1.12
++ @radix-ui/react-context-menu@2.2.16
++ @radix-ui/react-dialog@1.1.15
++ @radix-ui/react-dropdown-menu@2.1.16
++ @radix-ui/react-hover-card@1.1.15
++ @radix-ui/react-label@2.1.8
++ @radix-ui/react-menubar@1.1.16
++ @radix-ui/react-navigation-menu@1.2.14
++ @radix-ui/react-popover@1.1.15
++ @radix-ui/react-progress@1.1.8
++ @radix-ui/react-radio-group@1.3.8
++ @radix-ui/react-scroll-area@1.2.10
++ @radix-ui/react-select@2.2.6
++ @radix-ui/react-separator@1.1.8
++ @radix-ui/react-slider@1.3.6
++ @radix-ui/react-slot@1.2.4
++ @radix-ui/react-switch@1.2.6
++ @radix-ui/react-tabs@1.1.13
++ @radix-ui/react-toast@1.2.15
++ @radix-ui/react-toggle@1.1.10
++ @radix-ui/react-toggle-group@1.1.11
++ @radix-ui/react-tooltip@1.2.8
++ @reactuses/core@6.1.9
++ @tanstack/react-query@5.90.19
++ @tanstack/react-table@8.21.3
++ class-variance-authority@0.7.1
++ clsx@2.1.1
++ cmdk@1.1.1
++ date-fns@4.1.0
++ embla-carousel-react@8.6.0
++ framer-motion@12.26.2
++ input-otp@1.4.2
++ lucide-react@0.525.0
++ next@16.1.3
++ next-auth@4.24.13
++ next-intl@4.7.0
++ next-themes@0.4.6
++ prisma@6.19.2
++ react@19.2.3
++ react-day-picker@9.13.0
++ react-dom@19.2.3
++ react-hook-form@7.71.1
++ react-markdown@10.1.0
++ react-resizable-panels@3.0.6
++ react-syntax-highlighter@15.6.6
++ recharts@2.15.4
++ sharp@0.34.5
++ sonner@2.0.7
++ tailwind-merge@3.4.0
++ tailwindcss-animate@1.0.7
++ uuid@11.1.0
++ vaul@1.1.2
++ z-ai-web-dev-sdk@0.0.17
++ zod@4.3.5
++ zustand@5.0.10
+
+827 packages installed [7.84s]
+==========================================
+[2026-03-22 03:12:43] Completed: bun install
+[LOG] Step: bun install | Duration: 8s
+==========================================
+
+==========================================
+[2026-03-22 03:12:43] Starting: bun run db:push
+==========================================
+[BUN] Setting up database...
+$ prisma db push
+Environment variables loaded from .env
+Prisma schema loaded from prisma/schema.prisma
+Datasource "db": SQLite database "custom.db" at "file:/home/z/my-project/db/custom.db"
+
+SQLite database custom.db created at file:/home/z/my-project/db/custom.db
+
+🚀  Your database is now in sync with your Prisma schema. Done in 18ms
+
+Running generate... (Use --skip-generate to skip the generators)
+[2K[1A[2K[GRunning generate... - Prisma Client
+[2K[1A[2K[G✔ Generated Prisma Client (v6.19.2) to ./node_modules/@prisma/client in 67ms
+┌─────────────────────────────────────────────────────────┐
+│  Update available 6.19.2 -> 7.5.0                       │
+│                                                         │
+│  This is a major update - please follow the guide at    │
+│  https://pris.ly/d/major-version-upgrade                │
+│                                                         │
+│  Run the following to update                            │
+│    npm i --save-dev prisma@latest                       │
+│    npm i @prisma/client@latest                          │
+└─────────────────────────────────────────────────────────┘
+
+==========================================
+[2026-03-22 03:12:44] Completed: bun run db:push
+[LOG] Step: bun run db:push | Duration: 1s
+==========================================
+
+==========================================
+[2026-03-22 03:12:44] Starting: Starting Next.js dev server
+==========================================
+[BUN] Starting development server...
+==========================================
+$ next dev -p 3000 2>&1 | tee dev.log
+[2026-03-22 03:12:44] Completed: Starting Next.js dev server
+[LOG] Step: Starting Next.js dev server | Duration: 0s
+==========================================
+
+==========================================
+[2026-03-22 03:12:44] Starting: Waiting for Next.js dev server
+==========================================
+Waiting for Next.js dev server to be ready on localhost:3000...
+Attempt 1/60: Next.js dev server not ready yet, waiting...
+▲ Next.js 16.1.3 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://21.0.14.15:3000
+- Environments: .env
+
+✓ Starting...
+Attention: Next.js now collects completely anonymous telemetry regarding usage.
+This information is used to shape Next.js' roadmap and prioritize features.
+You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+https://nextjs.org/telemetry
+
+
+  We detected TypeScript in your project and reconfigured your tsconfig.json file for you.
+  The following suggested values were added to your tsconfig.json. These values can be changed to fit your project's needs:
+
+  	- include was updated to add '.next/dev/types/**/*.ts'
+
+  The following mandatory changes were made to your tsconfig.json:
+
+  	- jsx was set to react-jsx (next.js uses the React automatic runtime)
+
+✓ Ready in 903ms
+ GET / 200 in 2.8s (compile: 2.6s, render: 145ms)
+Next.js dev server is ready!
+ GET / 200 in 2.8s (compile: 2.6s, render: 220ms)
+==========================================
+[2026-03-22 03:12:48] Completed: Waiting for Next.js dev server
+[LOG] Step: Waiting for Next.js dev server | Duration: 4s
+==========================================
+
+==========================================
+[2026-03-22 03:12:48] Starting: Health check
+==========================================
+[BUN] Performing health check...
+ GET / 200 in 25ms (compile: 2ms, render: 23ms)
+[BUN] Health check passed
+==========================================
+[2026-03-22 03:12:48] Completed: Health check
+[LOG] Step: Health check | Duration: 0s
+==========================================
+
+==========================================
+[2026-03-22 03:12:48] Starting: Starting mini-services
+==========================================
+Found mini-services directory, scanning for sub-services...
+Mini-services startup completed. Started 0 service(s).
+==========================================
+[2026-03-22 03:12:48] Completed: Starting mini-services
+[LOG] Step: Starting mini-services | Duration: 0s
+==========================================
+
+Next.js dev server is running in background (PID: 659).
+Use 'kill 659' to stop it.
+✓ Compiled in 153ms
+✓ Compiled in 260ms
+⚠ Cross origin request detected from preview-chat-8da018a8-036e-4014-8ba6-c6057d554630.space.z.ai to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
+⨯ ./src/app/page.tsx:92:25
+Ecmascript file had an error
+[0m [90m 90 |[39m ]
+ [90m 91 |[39m
+[31m[1m>[22m[39m[90m 92 |[39m [36mexport[39m [36mdefault[39m [36mfunction[39m [33mHome[39m() {
+ [90m    |[39m                         [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 93 |[39m   [36mconst[39m [selectedImage[33m,[39m setSelectedImage] [33m=[39m useState[33m<[39m[33mstring[39m [33m|[39m [36mnull[39m[33m>[39m([36mnull[39m)
+ [90m 94 |[39m   [36mconst[39m [currentGalleryIndex[33m,[39m setCurrentGalleryIndex] [33m=[39m useState([35m0[39m)
+ [90m 95 |[39m[0m
+
+the name `Home` is defined multiple times
+
+Import traces:
+  Client Component Browser:
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+
+ GET / 500 in 848ms (compile: 735ms, render: 113ms)
+⨯ ./src/app/page.tsx:92:25
+Ecmascript file had an error
+[0m [90m 90 |[39m ]
+ [90m 91 |[39m
+[31m[1m>[22m[39m[90m 92 |[39m [36mexport[39m [36mdefault[39m [36mfunction[39m [33mHome[39m() {
+ [90m    |[39m                         [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 93 |[39m   [36mconst[39m [selectedImage[33m,[39m setSelectedImage] [33m=[39m useState[33m<[39m[33mstring[39m [33m|[39m [36mnull[39m[33m>[39m([36mnull[39m)
+ [90m 94 |[39m   [36mconst[39m [currentGalleryIndex[33m,[39m setCurrentGalleryIndex] [33m=[39m useState([35m0[39m)
+ [90m 95 |[39m[0m
+
+the name `Home` is defined multiple times
+
+Import traces:
+  Client Component Browser:
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+
+ GET / 500 in 37ms (compile: 28ms, render: 9ms)
+⨯ ./src/app/page.tsx:92:25
+Ecmascript file had an error
+[0m [90m 90 |[39m ]
+ [90m 91 |[39m
+[31m[1m>[22m[39m[90m 92 |[39m [36mexport[39m [36mdefault[39m [36mfunction[39m [33mHome[39m() {
+ [90m    |[39m                         [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 93 |[39m   [36mconst[39m [selectedImage[33m,[39m setSelectedImage] [33m=[39m useState[33m<[39m[33mstring[39m [33m|[39m [36mnull[39m[33m>[39m([36mnull[39m)
+ [90m 94 |[39m   [36mconst[39m [currentGalleryIndex[33m,[39m setCurrentGalleryIndex] [33m=[39m useState([35m0[39m)
+ [90m 95 |[39m[0m
+
+the name `Home` is defined multiple times
+
+Import traces:
+  Client Component Browser:
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+
+ GET / 500 in 54ms (compile: 43ms, render: 10ms)
+⨯ ./src/app/page.tsx:92:25
+Ecmascript file had an error
+[0m [90m 90 |[39m ]
+ [90m 91 |[39m
+[31m[1m>[22m[39m[90m 92 |[39m [36mexport[39m [36mdefault[39m [36mfunction[39m [33mHome[39m() {
+ [90m    |[39m                         [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 93 |[39m   [36mconst[39m [selectedImage[33m,[39m setSelectedImage] [33m=[39m useState[33m<[39m[33mstring[39m [33m|[39m [36mnull[39m[33m>[39m([36mnull[39m)
+ [90m 94 |[39m   [36mconst[39m [currentGalleryIndex[33m,[39m setCurrentGalleryIndex] [33m=[39m useState([35m0[39m)
+ [90m 95 |[39m[0m
+
+the name `Home` is defined multiple times
+
+Import traces:
+  Client Component Browser:
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+
+ GET / 500 in 25ms (compile: 18ms, render: 7ms)
+⨯ ./src/app/page.tsx:92:25
+Ecmascript file had an error
+[0m [90m 90 |[39m ]
+ [90m 91 |[39m
+[31m[1m>[22m[39m[90m 92 |[39m [36mexport[39m [36mdefault[39m [36mfunction[39m [33mHome[39m() {
+ [90m    |[39m                         [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 93 |[39m   [36mconst[39m [selectedImage[33m,[39m setSelectedImage] [33m=[39m useState[33m<[39m[33mstring[39m [33m|[39m [36mnull[39m[33m>[39m([36mnull[39m)
+ [90m 94 |[39m   [36mconst[39m [currentGalleryIndex[33m,[39m setCurrentGalleryIndex] [33m=[39m useState([35m0[39m)
+ [90m 95 |[39m[0m
+
+the name `Home` is defined multiple times
+
+Import traces:
+  Client Component Browser:
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+
+ GET / 500 in 23ms (compile: 15ms, render: 7ms)
+⨯ ./src/app/page.tsx:92:25
+Ecmascript file had an error
+[0m [90m 90 |[39m ]
+ [90m 91 |[39m
+[31m[1m>[22m[39m[90m 92 |[39m [36mexport[39m [36mdefault[39m [36mfunction[39m [33mHome[39m() {
+ [90m    |[39m                         [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 93 |[39m   [36mconst[39m [selectedImage[33m,[39m setSelectedImage] [33m=[39m useState[33m<[39m[33mstring[39m [33m|[39m [36mnull[39m[33m>[39m([36mnull[39m)
+ [90m 94 |[39m   [36mconst[39m [currentGalleryIndex[33m,[39m setCurrentGalleryIndex] [33m=[39m useState([35m0[39m)
+ [90m 95 |[39m[0m
+
+the name `Home` is defined multiple times
+
+Import traces:
+  Client Component Browser:
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+
+ GET / 500 in 22ms (compile: 15ms, render: 7ms)
+⨯ ./src/app/page.tsx:92:25
+Ecmascript file had an error
+[0m [90m 90 |[39m ]
+ [90m 91 |[39m
+[31m[1m>[22m[39m[90m 92 |[39m [36mexport[39m [36mdefault[39m [36mfunction[39m [33mHome[39m() {
+ [90m    |[39m                         [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 93 |[39m   [36mconst[39m [selectedImage[33m,[39m setSelectedImage] [33m=[39m useState[33m<[39m[33mstring[39m [33m|[39m [36mnull[39m[33m>[39m([36mnull[39m)
+ [90m 94 |[39m   [36mconst[39m [currentGalleryIndex[33m,[39m setCurrentGalleryIndex] [33m=[39m useState([35m0[39m)
+ [90m 95 |[39m[0m
+
+the name `Home` is defined multiple times
+
+Import traces:
+  Client Component Browser:
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+
+ GET / 500 in 23ms (compile: 16ms, render: 7ms)
+✓ Compiled in 126ms
+Persisting failed: Unable to write SST file 00000106.sst
+
+Caused by:
+    No such file or directory (os error 2)
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+
+thread 'tokio-runtime-worker' (1042) panicked at /build/turbopack/crates/turbo-tasks-backend/src/backend/operation/mod.rs:156:17:
+Failed to restore task data (corrupted database or bug): Meta for OutputAssetsReference::references (TaskId 112521))
+
+Caused by:
+    0: Looking up data for TaskId 112521 from database failed
+    1: Unable to open static sorted file referenced from 00000104.meta
+    2: Unable to open static sorted file 00000100.sst
+    3: No such file or directory (os error 2)
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+thread 'tokio-runtime-worker' (1073) panicked at /build/turbopack/crates/turbo-tasks-backend/src/backend/operation/mod.rs:156:17:
+Failed to restore task data (corrupted database or bug): Meta for <NodeJsChunkingContext as ChunkingContext>::module_export_usage (TaskId 112566))
+
+Caused by:
+    0: Looking up data for TaskId 112566 from database failed
+    1: Unable to open static sorted file referenced from 00000104.meta
+    2: Unable to open static sorted file 00000100.sst
+    3: No such file or directory (os error 2)
+
+thread 'tokio-runtime-worker' (1073) panicked at /build/turbopack/crates/turbo-tasks-backend/src/backend/operation/mod.rs:156:17:
+Failed to restore task data (corrupted database or bug): Meta for <AssetIdent as ValueToString>::to_string (TaskId 112574))
+
+Caused by:
+    0: Looking up data for TaskId 112574 from database failed
+    1: Unable to open static sorted file referenced from 00000104.meta
+    2: Unable to open static sorted file 00000100.sst
+    3: No such file or directory (os error 2)
+
+-----
+[1m[31mFATAL[39m[0m: An unexpected Turbopack error occurred. A panic log has been written to /tmp/next-panic-f25423049a0b604d19eed7eb173cacf5.log.
+
+To help make Turbopack better, report this error by clicking here: https://github.com/vercel/next.js/discussions/new?category=turbopack-error-report&title=Turbopack%20Error%3A%20Failed%20to%20write%20app%20endpoint%20%2Fpage&body=Turbopack%20version%3A%20%60731ace46%60%0ANext.js%20version%3A%20%600.0.0%60%0A%0AError%20message%3A%0A%60%60%60%0ATurbopack%20Error%3A%20Failed%20to%20write%20app%20endpoint%20%2Fpage%0A%60%60%60&labels=Turbopack,Turbopack%20Panic%20Backtrace
+-----
+
+⨯ Error: ENOENT: no such file or directory, open '/home/z/my-project/.next/dev/server/pages/_app/build-manifest.json'
+    at ignore-listed frames {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/z/my-project/.next/dev/server/pages/_app/build-manifest.json'
+}
+Error [TurbopackInternalError]: Failed to write app endpoint /page
+
+Caused by:
+- Failed to restore task data (corrupted database or bug): Meta for OutputAssetsReference::references (TaskId 112521))
+
+Debug info:
+- Execution of get_written_endpoint_with_issues_operation failed
+- Execution of endpoint_write_to_disk failed
+- Execution of <AppEndpoint as Endpoint>::output failed
+- Failed to write app endpoint /page
+- Execution of all_server_paths failed
+- Execution of all_assets_from_entries failed
+- Execution of <EcmascriptBrowserChunk as OutputAssetsReference>::references failed
+- Execution of <EcmascriptChunk as OutputAssetsReference>::references failed
+- Failed to restore task data (corrupted database or bug): Meta for OutputAssetsReference::references (TaskId 112521))
+  
+  Caused by:
+      0: Looking up data for TaskId 112521 from database failed
+      1: Unable to open static sorted file referenced from 00000104.meta
+      2: Unable to open static sorted file 00000100.sst
+      3: No such file or directory (os error 2)
+    at <unknown> (TurbopackInternalError: Failed to write app endpoint /page) {
+  location: '/build/turbopack/crates/turbo-tasks-backend/src/backend/operation/mod.rs:156:17'
+}
+⨯ Error: ENOENT: no such file or directory, open '/home/z/my-project/.next/dev/server/pages/_app/build-manifest.json'
+    at ignore-listed frames {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/z/my-project/.next/dev/server/pages/_app/build-manifest.json'
+}
+Error: ENOENT: no such file or directory, open '/home/z/my-project/.next/dev/server/pages/_app/build-manifest.json'
+    at ignore-listed frames {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/z/my-project/.next/dev/server/pages/_app/build-manifest.json'
+}
+
+-----
+[1m[31mFATAL[39m[0m: An unexpected Turbopack error occurred. A panic log has been written to /tmp/next-panic-f25423049a0b604d19eed7eb173cacf5.log.
+
+To help make Turbopack better, report this error by clicking here: https://github.com/vercel/next.js/discussions/new?category=turbopack-error-report&title=Turbopack%20Error%3A%20Failed%20to%20write%20app%20endpoint%20%2Fpage&body=Turbopack%20version%3A%20%60731ace46%60%0ANext.js%20version%3A%20%600.0.0%60%0A%0AError%20message%3A%0A%60%60%60%0ATurbopack%20Error%3A%20Failed%20to%20write%20app%20endpoint%20%2Fpage%0A%60%60%60&labels=Turbopack,Turbopack%20Panic%20Backtrace
+-----
+
+⨯ Error: ENOENT: no such file or directory, open '/home/z/my-project/.next/dev/server/pages/_app/build-manifest.json'
+    at ignore-listed frames {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/z/my-project/.next/dev/server/pages/_app/build-manifest.json'
+}
+Error [TurbopackInternalError]: Failed to write app endpoint /page
+
+Caused by:
+- Failed to restore task data (corrupted database or bug): Meta for OutputAssetsReference::references (TaskId 112521))
+
+Debug info:
+- Execution of get_written_endpoint_with_issues_operation failed
+- Execution of endpoint_write_to_disk failed
+- Execution of <AppEndpoint as Endpoint>::output failed
+- Failed to write app endpoint /page
+- Execution of all_server_paths failed
+- Execution of all_assets_from_entries failed
+- Execution of <EcmascriptBrowserChunk as OutputAssetsReference>::references failed
+- Execution of <EcmascriptChunk as OutputAssetsReference>::references failed
+- Failed to restore task data (corrupted database or bug): Meta for OutputAssetsReference::references (TaskId 112521))
+  
+  Caused by:
+      0: Looking up data for TaskId 112521 from database failed
+      1: Unable to open static sorted file referenced from 00000104.meta
+      2: Unable to open static sorted file 00000100.sst
+      3: No such file or directory (os error 2)
+    at <unknown> (TurbopackInternalError: Failed to write app endpoint /page) {
+  location: '/build/turbopack/crates/turbo-tasks-backend/src/backend/operation/mod.rs:156:17'
+}
+⨯ Error: ENOENT: no such file or directory, open '/home/z/my-project/.next/dev/server/pages/_app/build-manifest.json'
+    at ignore-listed frames {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/z/my-project/.next/dev/server/pages/_app/build-manifest.json'
+}
+Error: ENOENT: no such file or directory, open '/home/z/my-project/.next/dev/server/pages/_app/build-manifest.json'
+    at ignore-listed frames {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/z/my-project/.next/dev/server/pages/_app/build-manifest.json'
+}
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+
+-----
+[1m[31mFATAL[39m[0m: An unexpected Turbopack error occurred. A panic log has been written to /tmp/next-panic-f25423049a0b604d19eed7eb173cacf5.log.
+
+To help make Turbopack better, report this error by clicking here: https://github.com/vercel/next.js/discussions/new?category=turbopack-error-report&title=Turbopack%20Error%3A%20Failed%20to%20write%20app%20endpoint%20%2Fpage&body=Turbopack%20version%3A%20%60731ace46%60%0ANext.js%20version%3A%20%600.0.0%60%0A%0AError%20message%3A%0A%60%60%60%0ATurbopack%20Error%3A%20Failed%20to%20write%20app%20endpoint%20%2Fpage%0A%60%60%60&labels=Turbopack,Turbopack%20Panic%20Backtrace
+-----
+
+⨯ Error: ENOENT: no such file or directory, open '/home/z/my-project/.next/dev/server/pages/_app/build-manifest.json'
+    at ignore-listed frames {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/z/my-project/.next/dev/server/pages/_app/build-manifest.json'
+}
+Error [TurbopackInternalError]: Failed to write app endpoint /page
+
+Caused by:
+- Failed to restore task data (corrupted database or bug): Meta for OutputAssetsReference::references (TaskId 112521))
+
+Debug info:
+- Execution of get_written_endpoint_with_issues_operation failed
+- Execution of endpoint_write_to_disk failed
+- Execution of <AppEndpoint as Endpoint>::output failed
+- Failed to write app endpoint /page
+- Execution of all_server_paths failed
+- Execution of all_assets_from_entries failed
+- Execution of <EcmascriptBrowserChunk as OutputAssetsReference>::references failed
+- Execution of <EcmascriptChunk as OutputAssetsReference>::references failed
+- Failed to restore task data (corrupted database or bug): Meta for OutputAssetsReference::references (TaskId 112521))
+  
+  Caused by:
+      0: Looking up data for TaskId 112521 from database failed
+      1: Unable to open static sorted file referenced from 00000104.meta
+      2: Unable to open static sorted file 00000100.sst
+      3: No such file or directory (os error 2)
+    at <unknown> (TurbopackInternalError: Failed to write app endpoint /page) {
+  location: '/build/turbopack/crates/turbo-tasks-backend/src/backend/operation/mod.rs:156:17'
+}
+⨯ Error: ENOENT: no such file or directory, open '/home/z/my-project/.next/dev/server/pages/_app/build-manifest.json'
+    at ignore-listed frames {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/z/my-project/.next/dev/server/pages/_app/build-manifest.json'
+}
+Error: ENOENT: no such file or directory, open '/home/z/my-project/.next/dev/server/pages/_app/build-manifest.json'
+    at ignore-listed frames {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/z/my-project/.next/dev/server/pages/_app/build-manifest.json'
+}
+
+-----
+[1m[31mFATAL[39m[0m: An unexpected Turbopack error occurred. A panic log has been written to /tmp/next-panic-f25423049a0b604d19eed7eb173cacf5.log.
+
+To help make Turbopack better, report this error by clicking here: https://github.com/vercel/next.js/discussions/new?category=turbopack-error-report&title=Turbopack%20Error%3A%20Failed%20to%20write%20app%20endpoint%20%2Fpage&body=Turbopack%20version%3A%20%60731ace46%60%0ANext.js%20version%3A%20%600.0.0%60%0A%0AError%20message%3A%0A%60%60%60%0ATurbopack%20Error%3A%20Failed%20to%20write%20app%20endpoint%20%2Fpage%0A%60%60%60&labels=Turbopack,Turbopack%20Panic%20Backtrace
+-----
+
+⨯ Error: ENOENT: no such file or directory, open '/home/z/my-project/.next/dev/server/pages/_app/build-manifest.json'
+    at ignore-listed frames {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/z/my-project/.next/dev/server/pages/_app/build-manifest.json'
+}
+Error [TurbopackInternalError]: Failed to write app endpoint /page
+
+Caused by:
+- Failed to restore task data (corrupted database or bug): Meta for OutputAssetsReference::references (TaskId 112521))
+
+Debug info:
+- Execution of get_written_endpoint_with_issues_operation failed
+- Execution of endpoint_write_to_disk failed
+- Execution of <AppEndpoint as Endpoint>::output failed
+- Failed to write app endpoint /page
+- Execution of all_server_paths failed
+- Execution of all_assets_from_entries failed
+- Execution of <EcmascriptBrowserChunk as OutputAssetsReference>::references failed
+- Execution of <EcmascriptChunk as OutputAssetsReference>::references failed
+- Failed to restore task data (corrupted database or bug): Meta for OutputAssetsReference::references (TaskId 112521))
+  
+  Caused by:
+      0: Looking up data for TaskId 112521 from database failed
+      1: Unable to open static sorted file referenced from 00000104.meta
+      2: Unable to open static sorted file 00000100.sst
+      3: No such file or directory (os error 2)
+    at <unknown> (TurbopackInternalError: Failed to write app endpoint /page) {
+  location: '/build/turbopack/crates/turbo-tasks-backend/src/backend/operation/mod.rs:156:17'
+}
+⨯ Error: ENOENT: no such file or directory, open '/home/z/my-project/.next/dev/server/pages/_app/build-manifest.json'
+    at ignore-listed frames {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/z/my-project/.next/dev/server/pages/_app/build-manifest.json'
+}
+Error: ENOENT: no such file or directory, open '/home/z/my-project/.next/dev/server/pages/_app/build-manifest.json'
+    at ignore-listed frames {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/z/my-project/.next/dev/server/pages/_app/build-manifest.json'
+}
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+
+-----
+[1m[31mFATAL[39m[0m: An unexpected Turbopack error occurred. A panic log has been written to /tmp/next-panic-f25423049a0b604d19eed7eb173cacf5.log.
+
+To help make Turbopack better, report this error by clicking here: https://github.com/vercel/next.js/discussions/new?category=turbopack-error-report&title=Turbopack%20Error%3A%20Failed%20to%20write%20app%20endpoint%20%2Fpage&body=Turbopack%20version%3A%20%60731ace46%60%0ANext.js%20version%3A%20%600.0.0%60%0A%0AError%20message%3A%0A%60%60%60%0ATurbopack%20Error%3A%20Failed%20to%20write%20app%20endpoint%20%2Fpage%0A%60%60%60&labels=Turbopack,Turbopack%20Panic%20Backtrace
+-----
+
+⨯ Error: ENOENT: no such file or directory, open '/home/z/my-project/.next/dev/server/pages/_app/build-manifest.json'
+    at ignore-listed frames {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/z/my-project/.next/dev/server/pages/_app/build-manifest.json'
+}
+Error [TurbopackInternalError]: Failed to write app endpoint /page
+
+Caused by:
+- Failed to restore task data (corrupted database or bug): Meta for OutputAssetsReference::references (TaskId 112521))
+
+Debug info:
+- Execution of get_written_endpoint_with_issues_operation failed
+- Execution of endpoint_write_to_disk failed
+- Execution of <AppEndpoint as Endpoint>::output failed
+- Failed to write app endpoint /page
+- Execution of all_server_paths failed
+- Execution of all_assets_from_entries failed
+- Execution of <EcmascriptBrowserChunk as OutputAssetsReference>::references failed
+- Execution of <EcmascriptChunk as OutputAssetsReference>::references failed
+- Failed to restore task data (corrupted database or bug): Meta for OutputAssetsReference::references (TaskId 112521))
+  
+  Caused by:
+      0: Looking up data for TaskId 112521 from database failed
+      1: Unable to open static sorted file referenced from 00000104.meta
+      2: Unable to open static sorted file 00000100.sst
+      3: No such file or directory (os error 2)
+    at <unknown> (TurbopackInternalError: Failed to write app endpoint /page) {
+  location: '/build/turbopack/crates/turbo-tasks-backend/src/backend/operation/mod.rs:156:17'
+}
+⨯ Error: ENOENT: no such file or directory, open '/home/z/my-project/.next/dev/server/pages/_app/build-manifest.json'
+    at ignore-listed frames {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/z/my-project/.next/dev/server/pages/_app/build-manifest.json'
+}
+Error: ENOENT: no such file or directory, open '/home/z/my-project/.next/dev/server/pages/_app/build-manifest.json'
+    at ignore-listed frames {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/z/my-project/.next/dev/server/pages/_app/build-manifest.json'
+}
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+
+-----
+[1m[31mFATAL[39m[0m: An unexpected Turbopack error occurred. A panic log has been written to /tmp/next-panic-f25423049a0b604d19eed7eb173cacf5.log.
+
+To help make Turbopack better, report this error by clicking here: https://github.com/vercel/next.js/discussions/new?category=turbopack-error-report&title=Turbopack%20Error%3A%20Failed%20to%20write%20app%20endpoint%20%2Fpage&body=Turbopack%20version%3A%20%60731ace46%60%0ANext.js%20version%3A%20%600.0.0%60%0A%0AError%20message%3A%0A%60%60%60%0ATurbopack%20Error%3A%20Failed%20to%20write%20app%20endpoint%20%2Fpage%0A%60%60%60&labels=Turbopack,Turbopack%20Panic%20Backtrace
+-----
+
+⨯ Error: ENOENT: no such file or directory, open '/home/z/my-project/.next/dev/server/pages/_app/build-manifest.json'
+    at ignore-listed frames {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/z/my-project/.next/dev/server/pages/_app/build-manifest.json'
+}
+Error [TurbopackInternalError]: Failed to write app endpoint /page
+
+Caused by:
+- Failed to restore task data (corrupted database or bug): Meta for OutputAssetsReference::references (TaskId 112521))
+
+Debug info:
+- Execution of get_written_endpoint_with_issues_operation failed
+- Execution of endpoint_write_to_disk failed
+- Execution of <AppEndpoint as Endpoint>::output failed
+- Failed to write app endpoint /page
+- Execution of all_server_paths failed
+- Execution of all_assets_from_entries failed
+- Execution of <EcmascriptBrowserChunk as OutputAssetsReference>::references failed
+- Execution of <EcmascriptChunk as OutputAssetsReference>::references failed
+- Failed to restore task data (corrupted database or bug): Meta for OutputAssetsReference::references (TaskId 112521))
+  
+  Caused by:
+      0: Looking up data for TaskId 112521 from database failed
+      1: Unable to open static sorted file referenced from 00000104.meta
+      2: Unable to open static sorted file 00000100.sst
+      3: No such file or directory (os error 2)
+    at <unknown> (TurbopackInternalError: Failed to write app endpoint /page) {
+  location: '/build/turbopack/crates/turbo-tasks-backend/src/backend/operation/mod.rs:156:17'
+}
+⨯ Error: ENOENT: no such file or directory, open '/home/z/my-project/.next/dev/server/pages/_app/build-manifest.json'
+    at ignore-listed frames {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/z/my-project/.next/dev/server/pages/_app/build-manifest.json'
+}
+Error: ENOENT: no such file or directory, open '/home/z/my-project/.next/dev/server/pages/_app/build-manifest.json'
+    at ignore-listed frames {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/z/my-project/.next/dev/server/pages/_app/build-manifest.json'
+}
+error: script "dev" was terminated by signal SIGTERM (Polite quit request)
+Attention: Next.js now collects completely anonymous telemetry regarding usage.
+This information is used to shape Next.js' roadmap and prioritize features.
+You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+https://nextjs.org/telemetry
+
+[?25h
+==========================================
+[2026-03-22 11:31:17] Starting: bun install
+==========================================
+[BUN] Installing dependencies...
+[0.09ms] ".env"
+bun install v1.3.10 (30e609e0)
+
+Checked 846 installs across 915 packages (no changes) [46.00ms]
+==========================================
+[2026-03-22 11:31:17] Completed: bun install
+[LOG] Step: bun install | Duration: 0s
+==========================================
+
+==========================================
+[2026-03-22 11:31:17] Starting: bun run db:push
+==========================================
+[BUN] Setting up database...
+$ prisma db push
+Environment variables loaded from .env
+Prisma schema loaded from prisma/schema.prisma
+Datasource "db": SQLite database "custom.db" at "file:/home/z/my-project/db/custom.db"
+
+The database is already in sync with the Prisma schema.
+
+Running generate... (Use --skip-generate to skip the generators)
+[2K[1A[2K[GRunning generate... - Prisma Client
+[2K[1A[2K[G✔ Generated Prisma Client (v6.19.2) to ./node_modules/@prisma/client in 71ms
+┌─────────────────────────────────────────────────────────┐
+│  Update available 6.19.2 -> 7.5.0                       │
+│                                                         │
+│  This is a major update - please follow the guide at    │
+│  https://pris.ly/d/major-version-upgrade                │
+│                                                         │
+│  Run the following to update                            │
+│    npm i --save-dev prisma@latest                       │
+│    npm i @prisma/client@latest                          │
+└─────────────────────────────────────────────────────────┘
+
+==========================================
+[2026-03-22 11:31:19] Completed: bun run db:push
+[LOG] Step: bun run db:push | Duration: 2s
+==========================================
+
+==========================================
+[2026-03-22 11:31:19] Starting: Starting Next.js dev server
+==========================================
+[BUN] Starting development server...
+==========================================
+[2026-03-22 11:31:19] Completed: Starting Next.js dev server
+[LOG] Step: Starting Next.js dev server | Duration: 0s
+==========================================
+
+$ next dev -p 3000 2>&1 | tee dev.log
+==========================================
+[2026-03-22 11:31:19] Starting: Waiting for Next.js dev server
+==========================================
+Waiting for Next.js dev server to be ready on localhost:3000...
+Attempt 1/60: Next.js dev server not ready yet, waiting...
+▲ Next.js 16.1.3 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://21.0.7.61:3000
+- Environments: .env
+
+✓ Starting...
+Attention: Next.js now collects completely anonymous telemetry regarding usage.
+This information is used to shape Next.js' roadmap and prioritize features.
+You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+https://nextjs.org/telemetry
+
+✓ Ready in 960ms
+ GET / 200 in 3.1s (compile: 2.8s, render: 324ms)
+ GET / 200 in 3.1s (compile: 2.9s, render: 270ms)
+Next.js dev server is ready!
+==========================================
+ GET / 200 in 2.5s (compile: 2.4s, render: 90ms)
+[2026-03-22 11:31:23] Completed: Waiting for Next.js dev server
+[LOG] Step: Waiting for Next.js dev server | Duration: 4s
+==========================================
+
+==========================================
+[2026-03-22 11:31:23] Starting: Health check
+==========================================
+[BUN] Performing health check...
+ GET / 200 in 118ms (compile: 2ms, render: 116ms)
+ GET / 200 in 126ms (compile: 48ms, render: 77ms)
+[BUN] Health check passed
+==========================================
+[2026-03-22 11:31:24] Completed: Health check
+[LOG] Step: Health check | Duration: 1s
+==========================================
+
+==========================================
+[2026-03-22 11:31:24] Starting: Starting mini-services
+==========================================
+Found mini-services directory, scanning for sub-services...
+Mini-services startup completed. Started 0 service(s).
+==========================================
+[2026-03-22 11:31:24] Completed: Starting mini-services
+[LOG] Step: Starting mini-services | Duration: 0s
+==========================================
+
+Next.js dev server is running in background (PID: 641).
+Use 'kill 641' to stop it.
+ GET / 200 in 88ms (compile: 4ms, render: 85ms)
+ GET / 200 in 79ms (compile: 1816µs, render: 77ms)
+ GET / 200 in 72ms (compile: 3ms, render: 70ms)
+ GET / 200 in 74ms (compile: 3ms, render: 71ms)
+ GET / 200 in 92ms (compile: 3ms, render: 89ms)
+ GET / 200 in 71ms (compile: 1930µs, render: 69ms)
+==========================================
+[2026-03-22 16:41:05] Starting: bun install
+==========================================
+[BUN] Installing dependencies...
+[0.10ms] ".env"
+bun install v1.3.10 (30e609e0)
+
+Checked 846 installs across 915 packages (no changes) [43.00ms]
+==========================================
+[2026-03-22 16:41:05] Completed: bun install
+[LOG] Step: bun install | Duration: 0s
+==========================================
+
+==========================================
+[2026-03-22 16:41:05] Starting: bun run db:push
+==========================================
+[BUN] Setting up database...
+$ prisma db push
+Environment variables loaded from .env
+Prisma schema loaded from prisma/schema.prisma
+Datasource "db": SQLite database "custom.db" at "file:/home/z/my-project/db/custom.db"
+
+The database is already in sync with the Prisma schema.
+
+Running generate... (Use --skip-generate to skip the generators)
+[2K[1A[2K[GRunning generate... - Prisma Client
+[2K[1A[2K[G✔ Generated Prisma Client (v6.19.2) to ./node_modules/@prisma/client in 87ms
+
+==========================================
+[2026-03-22 16:41:06] Completed: bun run db:push
+[LOG] Step: bun run db:push | Duration: 1s
+==========================================
+
+==========================================
+[2026-03-22 16:41:06] Starting: Starting Next.js dev server
+==========================================
+[BUN] Starting development server...
+==========================================
+$ next dev -p 3000 2>&1 | tee dev.log
+[2026-03-22 16:41:07] Completed: Starting Next.js dev server
+[LOG] Step: Starting Next.js dev server | Duration: 1s
+==========================================
+
+==========================================
+[2026-03-22 16:41:07] Starting: Waiting for Next.js dev server
+==========================================
+Waiting for Next.js dev server to be ready on localhost:3000...
+Attempt 1/60: Next.js dev server not ready yet, waiting...
+▲ Next.js 16.1.3 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://21.0.7.39:3000
+- Environments: .env
+
+✓ Starting...
+Attention: Next.js now collects completely anonymous telemetry regarding usage.
+This information is used to shape Next.js' roadmap and prioritize features.
+You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+https://nextjs.org/telemetry
+
+✓ Ready in 1017ms
+Next.js dev server is ready!
+ GET / 200 in 3.2s (compile: 2.9s, render: 285ms)
+==========================================
+ GET / 200 in 3.2s (compile: 3.0s, render: 227ms)
+[2026-03-22 16:41:11] Completed: Waiting for Next.js dev server
+[LOG] Step: Waiting for Next.js dev server | Duration: 4s
+==========================================
+
+==========================================
+[2026-03-22 16:41:11] Starting: Health check
+==========================================
+[BUN] Performing health check...
+ GET / 200 in 60ms (compile: 3ms, render: 58ms)
+[BUN] Health check passed
+==========================================
+[2026-03-22 16:41:11] Completed: Health check
+[LOG] Step: Health check | Duration: 0s
+==========================================
+
+==========================================
+[2026-03-22 16:41:11] Starting: Starting mini-services
+==========================================
+Found mini-services directory, scanning for sub-services...
+Mini-services startup completed. Started 0 service(s).
+==========================================
+[2026-03-22 16:41:11] Completed: Starting mini-services
+[LOG] Step: Starting mini-services | Duration: 0s
+==========================================
+
+Next.js dev server is running in background (PID: 634).
+Use 'kill 634' to stop it.
+ GET / 200 in 58ms (compile: 2ms, render: 56ms)
+ GET / 200 in 98ms (compile: 5ms, render: 92ms)
+ GET / 200 in 93ms (compile: 2ms, render: 91ms)
+ GET / 200 in 74ms (compile: 2ms, render: 72ms)
+ GET / 200 in 69ms (compile: 2ms, render: 67ms)
+ GET / 200 in 85ms (compile: 3ms, render: 82ms)
+ GET / 200 in 97ms (compile: 2ms, render: 94ms)
+ GET / 200 in 84ms (compile: 2ms, render: 82ms)
+ GET / 200 in 66ms (compile: 2ms, render: 64ms)
+ GET / 200 in 94ms (compile: 3ms, render: 91ms)
+✓ Compiled in 174ms
+ GET / 200 in 222ms (compile: 54ms, render: 167ms)
+ GET / 200 in 79ms (compile: 3ms, render: 76ms)
+ GET / 200 in 72ms (compile: 2ms, render: 70ms)
+ GET / 200 in 76ms (compile: 5ms, render: 71ms)
+ GET / 200 in 89ms (compile: 1681µs, render: 87ms)
+ GET / 200 in 80ms (compile: 1933µs, render: 78ms)
+ GET / 200 in 67ms (compile: 1902µs, render: 65ms)
+ GET / 200 in 61ms (compile: 2ms, render: 59ms)
+ GET / 200 in 56ms (compile: 3ms, render: 53ms)
+ GET / 200 in 56ms (compile: 1823µs, render: 54ms)
+ GET / 200 in 77ms (compile: 4ms, render: 73ms)
+ GET / 200 in 63ms (compile: 1856µs, render: 61ms)
+ GET / 200 in 50ms (compile: 1541µs, render: 48ms)
+ GET / 200 in 58ms (compile: 1502µs, render: 57ms)
+ GET / 200 in 72ms (compile: 3ms, render: 70ms)
+ GET / 200 in 77ms (compile: 4ms, render: 73ms)
+ GET / 200 in 52ms (compile: 1808µs, render: 50ms)
+ GET / 200 in 52ms (compile: 1791µs, render: 51ms)
+ GET / 200 in 51ms (compile: 1656µs, render: 50ms)
+ GET / 200 in 69ms (compile: 1755µs, render: 68ms)
+ GET / 200 in 52ms (compile: 1933µs, render: 51ms)
+ GET / 200 in 58ms (compile: 1687µs, render: 56ms)
+ GET / 200 in 72ms (compile: 2ms, render: 70ms)
+ GET / 200 in 89ms (compile: 3ms, render: 86ms)
+✓ Compiled in 149ms
+ GET / 200 in 221ms (compile: 54ms, render: 167ms)
+ GET /images/gallery/gallery-1.jpg 404 in 156ms (compile: 61ms, render: 95ms)
+ GET /images/gallery/gallery-8.jpg 404 in 434ms (compile: 354ms, render: 80ms)
+⨯ The requested resource isn't a valid image for /images/gallery/gallery-1.jpg received null
+⨯ The requested resource isn't a valid image for /images/gallery/gallery-8.jpg received null
+ GET /images/gallery/gallery-2.jpg 404 in 31ms (compile: 6ms, render: 25ms)
+⨯ The requested resource isn't a valid image for /images/gallery/gallery-2.jpg received null
+ GET /images/gallery/gallery-5.jpg 404 in 35ms (compile: 5ms, render: 30ms)
+⨯ The requested resource isn't a valid image for /images/gallery/gallery-5.jpg received null
+ GET /images/gallery/gallery-3.jpg 404 in 41ms (compile: 6ms, render: 35ms)
+⨯ The requested resource isn't a valid image for /images/gallery/gallery-3.jpg received null
+ GET /images/gallery/gallery-4.jpg 404 in 24ms (compile: 5ms, render: 20ms)
+⨯ The requested resource isn't a valid image for /images/gallery/gallery-4.jpg received null
+ GET /images/gallery/gallery-7.jpg 404 in 25ms (compile: 4ms, render: 20ms)
+⨯ The requested resource isn't a valid image for /images/gallery/gallery-7.jpg received null
+ GET /images/gallery/gallery-6.jpg 404 in 45ms (compile: 7ms, render: 37ms)
+⨯ The requested resource isn't a valid image for /images/gallery/gallery-6.jpg received null
+ GET /images/gallery/gallery-2.jpg 404 in 38ms (compile: 7ms, render: 30ms)
+⨯ The requested resource isn't a valid image for /images/gallery/gallery-2.jpg received null
+ GET /images/gallery/gallery-3.jpg 404 in 31ms (compile: 5ms, render: 26ms)
+⨯ The requested resource isn't a valid image for /images/gallery/gallery-3.jpg received null
+ GET /images/gallery/gallery-4.jpg 404 in 33ms (compile: 7ms, render: 26ms)
+⨯ The requested resource isn't a valid image for /images/gallery/gallery-4.jpg received null
+ GET /images/gallery/gallery-5.jpg 404 in 30ms (compile: 8ms, render: 21ms)
+⨯ The requested resource isn't a valid image for /images/gallery/gallery-5.jpg received null
+ GET / 200 in 75ms (compile: 4ms, render: 70ms)
+ GET /images/gallery/gallery-2.jpg 404 in 40ms (compile: 4ms, render: 35ms)
+⨯ The requested resource isn't a valid image for /images/gallery/gallery-2.jpg received null
+ GET /images/gallery/gallery-1.jpg 404 in 28ms (compile: 1888µs, render: 26ms)
+⨯ The requested resource isn't a valid image for /images/gallery/gallery-1.jpg received null
+ GET /images/gallery/gallery-3.jpg 404 in 23ms (compile: 2ms, render: 21ms)
+⨯ The requested resource isn't a valid image for /images/gallery/gallery-3.jpg received null
+ GET /images/gallery/gallery-4.jpg 404 in 25ms (compile: 1717µs, render: 23ms)
+⨯ The requested resource isn't a valid image for /images/gallery/gallery-4.jpg received null
+ GET /images/gallery/gallery-6.jpg 404 in 25ms (compile: 1974µs, render: 23ms)
+⨯ The requested resource isn't a valid image for /images/gallery/gallery-6.jpg received null
+ GET /images/gallery/gallery-8.jpg 404 in 28ms (compile: 1753µs, render: 26ms)
+⨯ The requested resource isn't a valid image for /images/gallery/gallery-8.jpg received null
+ GET /images/gallery/gallery-5.jpg 404 in 74ms (compile: 6ms, render: 68ms)
+⨯ The requested resource isn't a valid image for /images/gallery/gallery-5.jpg received null
+ GET /images/gallery/gallery-7.jpg 404 in 81ms (compile: 34ms, render: 47ms)
+⨯ The requested resource isn't a valid image for /images/gallery/gallery-7.jpg received null
+ GET /images/gallery/gallery-2.jpg 404 in 25ms (compile: 6ms, render: 20ms)
+⨯ The requested resource isn't a valid image for /images/gallery/gallery-2.jpg received null
+ GET /images/gallery/gallery-3.jpg 404 in 30ms (compile: 5ms, render: 25ms)
+⨯ The requested resource isn't a valid image for /images/gallery/gallery-3.jpg received null
+ GET /images/gallery/gallery-4.jpg 404 in 32ms (compile: 5ms, render: 27ms)
+⨯ The requested resource isn't a valid image for /images/gallery/gallery-4.jpg received null
+ GET /images/gallery/gallery-5.jpg 404 in 21ms (compile: 3ms, render: 17ms)
+⨯ The requested resource isn't a valid image for /images/gallery/gallery-5.jpg received null
+ GET /images/gallery/gallery-6.jpg 404 in 24ms (compile: 6ms, render: 18ms)
+⨯ The requested resource isn't a valid image for /images/gallery/gallery-6.jpg received null
+ GET /images/gallery/gallery-7.jpg 404 in 28ms (compile: 3ms, render: 25ms)
+⨯ The requested resource isn't a valid image for /images/gallery/gallery-7.jpg received null
