@@ -7,7 +7,6 @@ import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import {
-  Home as HomeIcon,
   Phone,
   Mail,
   MapPin,
@@ -27,8 +26,46 @@ import {
   Heart,
   Users,
   TrendingUp,
-  Star
+  Star,
+  Youtube,
+  Facebook,
+  Instagram
 } from 'lucide-react'
+
+// TikTok Icon Component (not in lucide-react)
+const TikTokIcon = ({ className }: { className?: string }) => (
+  <svg className={className} viewBox="0 0 24 24" fill="currentColor">
+    <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
+  </svg>
+)
+
+// Social Media Links
+const socialMediaLinks = [
+  { 
+    name: 'YouTube', 
+    icon: Youtube, 
+    url: 'https://youtube.com/@liviaindah27?si=eXPfmISOvMw16LLv',
+    color: 'hover:text-red-600 hover:bg-red-50'
+  },
+  { 
+    name: 'TikTok', 
+    icon: TikTokIcon, 
+    url: 'https://www.tiktok.com/@livia.realestate?_r=1&_t=ZS-94uzT7rRwO5',
+    color: 'hover:text-black hover:bg-gray-100'
+  },
+  { 
+    name: 'Facebook', 
+    icon: Facebook, 
+    url: 'https://www.facebook.com/share/18QGwp6v5n/',
+    color: 'hover:text-blue-600 hover:bg-blue-50'
+  },
+  { 
+    name: 'Instagram', 
+    icon: Instagram, 
+    url: 'https://www.instagram.com/lifia_realestate?utm_source=qr&igsh=MWIyYml2MXJ4YnY3eA==',
+    color: 'hover:text-pink-600 hover:bg-pink-50'
+  },
+]
 
 // Format number to Indonesian currency format
 const formatPrice = (num: number) => {
@@ -276,6 +313,7 @@ const promoItems = [
   'Free SHM',
   'Free AC',
   'Free Canopy',
+  'Free Furnish',
 ]
 
 // Facilities
@@ -286,18 +324,20 @@ const facilities = [
   { name: 'Kolam Renang', image: '/images/facility-pool-new.jpg', description: 'Kolam renang keluarga' },
   { name: 'Taman Hijau', image: '/images/facility-park-new.jpg', description: 'Area hijau asri' },
   { name: 'Jogging Track', image: '/images/facility-jogging-new.jpg', description: 'Trekk lari sehat' },
+  { name: 'Ikame Water Gear', image: '/images/facility-water-gear.jpg', description: 'Wahana air seru' },
+  { name: 'Lapangan Padel', image: '/images/facility-padel.png', description: 'Lapangan olahraga modern' },
 ]
 
 // Gallery Images - Ganti foto di folder /public/images/gallery/
 const galleryImages = [
-  '/images/gallery/gallery-1.jpg',
-  '/images/gallery/gallery-2.jpg',
-  '/images/gallery/gallery-3.jpg',
-  '/images/gallery/gallery-4.jpg',
-  '/images/gallery/gallery-5.jpg',
-  '/images/gallery/gallery-6.jpg',
-  '/images/gallery/gallery-7.jpg',
-  '/images/gallery/gallery-8.jpg',
+  '/images/hero-house.jpg',
+  '/images/interior-living.jpg',
+  '/images/interior-kitchen.jpg',
+  '/images/interior-bedroom.jpg',
+  '/images/facility-pool-new.jpg',
+  '/images/facility-park-new.jpg',
+  '/images/facility-lake-new.jpg',
+  '/images/house-exterior.jpg',
 ]
 
 // Why Choose Us
@@ -340,10 +380,14 @@ export default function LandingPage() {
       {/* Header/Navigation */}
       <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100 shadow-sm">
         <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <div className="w-10 h-10 bg-gradient-to-br from-yellow-400 to-yellow-500 rounded-lg flex items-center justify-center">
-              <HomeIcon className="w-6 h-6 text-white" />
-            </div>
+          <div className="flex items-center gap-3">
+            <Image
+              src="/images/logo-livia.png"
+              alt="Livia Real Estate Logo"
+              width={48}
+              height={48}
+              className="rounded-lg"
+            />
             <div>
               <h1 className="text-lg font-bold text-gray-800">Livia Real Estate</h1>
               <p className="text-xs text-green-600 font-medium">Springhill In-House Sales</p>
@@ -911,9 +955,13 @@ export default function LandingPage() {
             <div className="relative">
               <div className="bg-white rounded-2xl p-8 shadow-xl">
                 <div className="flex items-center gap-4 mb-6">
-                  <div className="w-16 h-16 bg-gradient-to-br from-yellow-400 to-yellow-500 rounded-full flex items-center justify-center">
-                    <HomeIcon className="w-8 h-8 text-white" />
-                  </div>
+                  <Image
+                    src="/images/logo-livia.png"
+                    alt="Livia Real Estate Logo"
+                    width={64}
+                    height={64}
+                    className="rounded-full"
+                  />
                   <div>
                     <h3 className="text-xl font-bold text-gray-800">Livia Real Estate</h3>
                     <p className="text-green-600">Springhill In-House Sales</p>
@@ -931,6 +979,24 @@ export default function LandingPage() {
                   <div className="flex items-center gap-3">
                     <MapPin className="w-5 h-5 text-yellow-500" />
                     <span className="text-gray-700">Tangerang, Banten</span>
+                  </div>
+                </div>
+                {/* Social Media Links */}
+                <div className="mt-6 pt-6 border-t border-gray-100">
+                  <p className="text-sm text-gray-500 mb-3">Ikuti Kami</p>
+                  <div className="flex gap-3">
+                    {socialMediaLinks.map((social, index) => (
+                      <a
+                        key={index}
+                        href={social.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={`w-10 h-10 rounded-full flex items-center justify-center bg-gray-100 text-gray-600 transition-all ${social.color}`}
+                        title={social.name}
+                      >
+                        <social.icon className="w-5 h-5" />
+                      </a>
+                    ))}
                   </div>
                 </div>
               </div>
@@ -971,17 +1037,35 @@ export default function LandingPage() {
       {/* Footer */}
       <footer className="bg-white border-t border-gray-200 py-8">
         <div className="max-w-7xl mx-auto px-4">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             <div className="flex items-center gap-2">
-              <div className="w-8 h-8 bg-gradient-to-br from-yellow-400 to-yellow-500 rounded-lg flex items-center justify-center">
-                <HomeIcon className="w-5 h-5 text-white" />
-              </div>
+              <Image
+                src="/images/logo-livia.png"
+                alt="Livia Logo"
+                width={32}
+                height={32}
+                className="rounded-lg"
+              />
               <span className="font-bold text-gray-800">Livia Real Estate</span>
             </div>
-            <p className="text-sm text-gray-500">
-              Springhill Yume Lagoon - Cisauk, Tangerang
-            </p>
-            <p className="text-sm text-gray-500">
+            
+            {/* Social Media Links */}
+            <div className="flex gap-3">
+              {socialMediaLinks.map((social, index) => (
+                <a
+                  key={index}
+                  href={social.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`w-9 h-9 rounded-full flex items-center justify-center bg-gray-100 text-gray-600 transition-all ${social.color}`}
+                  title={social.name}
+                >
+                  <social.icon className="w-4 h-4" />
+                </a>
+              ))}
+            </div>
+            
+            <p className="text-sm text-gray-500 text-center">
               © 2025 Livia Real Estate. All rights reserved.
             </p>
           </div>
